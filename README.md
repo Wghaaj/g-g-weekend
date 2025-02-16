@@ -7,7 +7,7 @@ They can be used with:
 ```scss
 font-family: "Aclonica", sans-serif;
 ```
-<u>‼ Always use double quotes ("") for Aclonica and Montserrat fonts.</u>
+‼ Use double quotes ("") for Aclonica and Montserrat fonts.
 
 # Classes
 
@@ -54,18 +54,19 @@ For SCSS documentation, see: https://sass-lang.com/guide/
 
 # GitHub
 
-<b><u>!!! always use ` git pull origin main ` before coding </u></b>
+<b>!!! ALWAYS use <b></b> ` git pull origin main ` <b> before coding</b>
 
 <b>Essential Git Commands</b>
 
 `git add . `               # Add all changes  
 `git commit -m "..."  `   # Describe your changes briefly  
 `git push origin HEAD `   # Push changes to the repository  
-‼ Use only in this sequence.
+
+‼ USE ONLY IN THIS SEQUENCE.
 
 # Working with Branches
 To create a new branch (e.g., for the transport page):<br>
-` git checkout -b transport-page `
+` git checkout -b transport-page ` <br>
 This will help us work independently without interfering with each other. <br>
 Once the page is finished, I will merge this branch into main.
 
