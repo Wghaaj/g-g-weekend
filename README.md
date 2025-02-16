@@ -54,7 +54,7 @@ For SCSS documentation, see: https://sass-lang.com/guide/
 
 # GitHub
 
-<b>!!! ALWAYS use <b></b> ` git pull origin main ` <b> before coding</b>
+<b>!!! ALWAYS use</b> ` git pull origin main ` <b> before coding</b>
 
 <b>Essential Git Commands</b>
 
