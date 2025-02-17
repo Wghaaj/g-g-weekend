@@ -1,1 +1,72 @@
 @use 'variables' as *;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+}
+
+.contact-link {
+    color: $violet;
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.d-grid {
+    display: grid;
+    align-items: center;
+}
+
+footer {
+    padding: calc($common-margin / 2) $common-margin;
+    border-top: 1px solid black;
+    width: 100%;
+    bottom: 0;
+
+    .copyright {
+        grid-area: a;
+    }
+
+    .logo {
+        grid-area: b;
+    }
+
+    .contact-details {
+        grid-area: c;
+    }
+}
+
+.footer-grid {
+    grid-template-areas: "a b c";
+
+    @media screen and (max-width:1024px) {
+        grid-template-areas: "a b"
+        "c c ";
+
+        .contact-details {
+            padding-top: calc($common-margin / 2);
+        }
+    }
+
+    @media screen and (max-width:680px) {
+        grid-template-areas: "a"
+        "b"
+        "c"
+        ;
+
+        .copyright, .logo {
+            padding-bottom: calc($common-margin / 2);
+        }
+        
+        .contact-details {
+            padding-top: 0;
+        }
+    }
+}
