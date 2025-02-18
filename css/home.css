@@ -1,0 +1,133 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.aclonica {
+  font-family: "Aclonica", sans-serif;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.aside {
+  float: left;
+  padding: 60px;
+  border-right: 1px solid #841DE0;
+  box-shadow: 4px 1px 10px -8px #841DE0;
+  height: 100%;
+  width: 20%;
+}
+@media screen and (max-width: 1024px) {
+  .aside {
+    width: 15%;
+    padding: 30px;
+  }
+  .aside li {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .aside {
+    width: 20%;
+  }
+}
+.aside ul {
+  list-style: none;
+  padding: 0;
+}
+.aside ul a {
+  text-decoration: none;
+  color: unset;
+}
+.aside ul li {
+  padding-left: 15px;
+  text-align: left;
+  margin: 0;
+}
+.aside__link {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  width: fit-content;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  .aside__link {
+    margin: 0 auto;
+  }
+}
+.aside__link:hover a {
+  color: #841DE0;
+}
+.aside__link:hover svg path {
+  fill: #841DE0;
+}
+.aside__link:hover .parks path {
+  fill: none !important;
+  stroke: #841DE0;
+}
+.aside__link svg {
+  margin: 0;
+  width: 18px !important;
+  height: 20px !important;
+}
+
+main {
+  margin: 0;
+}
+
+.main {
+  width: 80%;
+  margin: 0;
+  display: inline-block;
+  padding: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 300px) {
+  .main .d-flex {
+    flex-direction: column;
+  }
+}
+
+.purple {
+  color: #841DE0;
+}
+
+.container {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 30px;
+    gap: 30px;
+  }
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+}
+.border img {
+  border-radius: 15px 15px 0px 0px;
+  max-width: inherit;
+}
+.border div {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.border div:last-child {
+  padding-bottom: 15px;
+}
+.border .line {
+  margin-top: 15px;
+}

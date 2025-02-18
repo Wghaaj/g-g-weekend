@@ -6,8 +6,22 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Aclonica;
+    src: url(/fonts/Aclonica-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat-Regular.ttf);
+}
+
 .big-container {
     max-width: $big-container-width;
+}
+
+.small-container {
+    max-width: $small-container-width;
 }
 
 .d-flex {
@@ -30,6 +44,11 @@ header {
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid #000000;
+    height: max-content;
+
+    @media screen and (max-width:1024px) {
+        padding: calc($common-margin / 2);
+    }
 
     a {
         margin: 0;
