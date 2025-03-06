@@ -57,7 +57,7 @@
     margin: 0 auto;
   }
 }
-.aside__link:hover a {
+.aside__link:hover p {
   color: #841DE0;
 }
 .aside__link:hover svg path {
@@ -114,12 +114,17 @@ main {
 .border {
   border: 1px solid black;
   border-radius: 15px;
-  max-width: 500px;
+  max-width: min-content;
   overflow: hidden;
 }
 .border img {
   border-radius: 15px 15px 0px 0px;
-  max-width: inherit;
+  width: 300px;
+}
+@media screen and (max-width: 680px) {
+  .border img {
+    width: 250px;
+  }
 }
 .border div {
   padding-left: 15px;
@@ -130,4 +135,8 @@ main {
 }
 .border .line {
   margin-top: 15px;
+}
+
+.p-15 {
+  padding-right: 15px;
 }
