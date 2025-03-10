@@ -425,7 +425,7 @@ places = [
         price: "££",
         description: "The Glasgow Argyle Hotel, BW Signature Collection by Best Western, is a 4-star establishment located at 27 Washington Street, Glasgow, G3 8AZ. Situated near the River Clyde, the hotel is within a mile of the city center, allowing guests to easily walk to attractions such as George Square, Merchant City, and Buchanan Galleries shopping center. The hotel offers 141 comfortable bedrooms, each equipped with free Wi-Fi, large flat-screen plasma TVs, and 24-hour room service. Additionally, there are 12 self-catering apartments featuring exposed brickwork and original ornate iron columns, some with mezzanine levels, making them suitable for families and business travelers. Guests can enjoy leisure facilities, including a 15-meter heated swimming pool, gym, sauna, and steam room. The on-site restaurant serves a menu prepared with seasonal ingredients, and the lounge bar offers a range of wines and beers.",
         smallDescription: "The Glasgow Argyle Hotel, BW Signature Collection by Best Western...",
-        image: "/images/GlasgowArgyle.jpg",
+        image: "/images/argyle.png",
         type:"hotels",
         phone: "+44 330 028 3407",
         email: "info@glasgowargylehotel.co.uk",
