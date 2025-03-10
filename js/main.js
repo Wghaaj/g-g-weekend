@@ -1,9 +1,9 @@
 //get aside links
-const restaurantsAside = document.getElementById('restaurants');
-const venuesAside = document.getElementById('venues');
-const hotelsAside = document.getElementById('hotels');
-const parksAside = document.getElementById('parks');
-const museumsAside = document.getElementById('museums');
+const restaurantsAside = document.querySelector('.restaurants');
+const venuesAside = document.querySelector('.venues');
+const hotelsAside = document.querySelector('.hotels');
+const parksAside = document.querySelector('.parks');
+const museumsAside = document.querySelector('.museums');
 
 //create categories
 const restaurants = places.filter(place => place.type.includes("restaurant"));

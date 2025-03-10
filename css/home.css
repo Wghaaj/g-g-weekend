@@ -120,6 +120,7 @@ main {
 .border img {
   border-radius: 15px 15px 0px 0px;
   width: 300px;
+  height: 50%;
 }
 @media screen and (max-width: 680px) {
   .border img {
