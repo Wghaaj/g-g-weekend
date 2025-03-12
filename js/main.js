@@ -24,7 +24,7 @@ function renderPlaces(places) {
         box.classList.add('border');
         box.onclick = function() {
             const placeId = place.id;
-            window.location.href = `../details.html?id=${placeId}`;
+            window.location.href = `details.html?id=${placeId}`;
         };
 
         box.innerHTML = `<img src="${place.image ? place.image : '../images/placeholder.jpg'}" alt="${place.title}">`;
