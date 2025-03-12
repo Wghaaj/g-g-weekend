@@ -1,7 +1,7 @@
 //get id from the url
 const urlParams = new URLSearchParams(window.location.search);
 const placeId = urlParams.get('id');
-
+//new coment to re-upload file
 const place = places.find(p => p.id === placeId);
 
 const wrapper = document.getElementById('wrapper');
