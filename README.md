@@ -11,9 +11,9 @@ font-family: "Aclonica", sans-serif;
 
 # Classes
 
-- Use .big-container-width for header and footer.
-- Use .small-container-width for main.
-- For all other classes, check home.scss.
+- Use .big-container for header and footer and main.
+- Use .small-container for some articles in main.
+- For all other classes, check files in scss folder.
 
 # SCSS
 
