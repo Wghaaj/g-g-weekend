@@ -1,4 +1,4 @@
-places = [
+const places = [
     {
         title:"Barrowland Ballroom",
         id: '1',
@@ -506,4 +506,4 @@ places = [
         details: "Please note that the hotel operates a cashless policy; all major credit and debit cards are accepted for payments."
     },
 
-]
+];

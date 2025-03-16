@@ -24,7 +24,7 @@ function renderPlaces(places) {
         box.classList.add('border');
         box.onclick = function() {
     if (place && place.id) {
-        window.location.href = `/details.html?id=${place.id}`;
+        window.location.href = `details.html?id=${place.id}`;
     } else {
         console.error("place or placeId is undefined", place);
     }
