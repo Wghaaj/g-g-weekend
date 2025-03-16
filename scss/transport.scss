@@ -12,12 +12,10 @@
   font-size: 20px;
 }
 
-.small-container {
+.big-container {
 
   padding: 15px;
-  
   flex: 1;
-
   gap: 20px h1 {
     font-size: 28px;
     margin-bottom: 15px;
@@ -36,7 +34,8 @@
   }
 }
 
-.articles {
+.small-container {
+
   max-width: 1360px;
   display: flex;
   justify-content: space-between;
@@ -46,7 +45,6 @@
 
 
   .FirstBus {
-    
     flex: 1;
     border: 1px solid #312f2f;
     text-align: center;
@@ -55,8 +53,6 @@
   }
 
   .ScotRail {
-    
-    
     flex: 1;
     border: 1px solid #312f2f;
     text-align: center;
