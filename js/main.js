@@ -23,9 +23,13 @@ function renderPlaces(places) {
         const box = document.createElement('div');
         box.classList.add('border');
         box.onclick = function() {
-            const placeId = place.id;
-            window.location.href = `../details.html?id=${placeId}`;
-        };
+    if (place && place.id) {
+        window.location.href = `/details.html?id=${place.id}`;
+    } else {
+        console.error("place or placeId is undefined", place);
+    }
+};
+        
 
         box.innerHTML = `<img src="${place.image ? place.image : '../images/placeholder.jpg'}" alt="${place.title}">`;
 
