@@ -1,51 +1,188 @@
 .montserrat {
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .aclonica {
-    font-family: "Aclonica", sans-serif;
-  }
-  
-  .f-20 {
-    font-size: 20px;
-  }
-
-.content {
-    flex: 1;
-    padding: 40px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.content h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
+.aclonica {
+  font-family: "Aclonica", sans-serif;
 }
 
-.content .main-text {
-    border: 1px solid #312f2f;
+.f-20 {
+  font-size: 20px;
+}
+
+.small-container {
+  padding: 15px;
+  flex: 1;
+  gap: 20px h1;
+  gap-font-size: 28px;
+  gap-margin-bottom: 15px;
+  gap-color: #333;
+}
+.small-container .main-text {
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 15px;
+  border: Solid 1px #000000;
+}
+
+.articles {
+  max-width: 1360px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.articles .FirstBus {
+  flex: 1;
+  border: 1px solid #312f2f;
+  text-align: center;
+  min-height: 250px;
+  min-width: 425px;
+}
+.articles .ScotRail {
+  flex: 1;
+  border: 1px solid #312f2f;
+  text-align: center;
+  min-height: 250px;
+  min-width: 425px;
+}
+.articles .Subway {
+  flex: 1;
+  border: 1px solid #312f2f;
+  text-align: center;
+  min-height: 250px;
+  min-width: 425px;
+}
+
+.p-30 {
+  padding: 30px 0;
+}
+
+.aside {
+  float: left;
+  padding: 60px;
+  border-right: 1px solid #841DE0;
+  box-shadow: 4px 1px 10px -8px #841DE0;
+  height: 100%;
+  width: 20%;
+}
+@media screen and (max-width: 1024px) {
+  .aside {
+    width: 15%;
     padding: 30px;
-    margin-bottom: 40px;
-    background-color: #ffffff;
-    line-height: 1.6;
-    font-size: 16px;
+  }
+  .aside li {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .aside {
+    width: 20%;
+  }
+}
+.aside ul {
+  list-style: none;
+  padding: 0;
+}
+.aside ul a {
+  text-decoration: none;
+  color: unset;
+}
+.aside ul li {
+  padding-left: 15px;
+  text-align: left;
+  margin: 0;
+}
+.aside__link {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  width: fit-content;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  .aside__link {
+    margin: 0 auto;
+  }
+}
+.aside__link:hover p {
+  color: #841DE0;
+}
+.aside__link:hover svg path {
+  fill: #841DE0;
+}
+.aside__link:hover .parks path {
+  fill: none !important;
+  stroke: #841DE0;
+}
+.aside__link svg {
+  margin: 0;
+  width: 18px !important;
+  height: 20px !important;
 }
 
-.content .articles {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
+main {
+  margin: 0;
 }
 
-.content .articles .article {
-    flex: 1;
-    background-color: #ffffff;
-    padding: 20px;
-    border: 1px solid #312f2f;
-    text-align: center;
-    transition: box-shadow 0.3s;
-    min-height: 150px;
+.main {
+  width: 80%;
+  margin: 0;
+  display: inline-block;
+  padding: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 300px) {
+  .main .d-flex {
+    flex-direction: column;
+  }
 }
 
-.content .articles .article:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.purple {
+  color: #841DE0;
+}
+
+.container {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 30px;
+    gap: 30px;
+  }
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 15px;
+  max-width: min-content;
+  overflow: hidden;
+}
+.border img {
+  border-radius: 15px 15px 0px 0px;
+  width: 300px;
+  max-height: 20rem;
+}
+@media screen and (max-width: 680px) {
+  .border img {
+    width: 250px;
+  }
+}
+.border div {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.border div:last-child {
+  padding-bottom: 15px;
+}
+.border .line {
+  margin-top: 15px;
 }
