@@ -13,206 +13,85 @@
 }
 
 .big-container {
-
-  padding: 15px;
   flex: 1;
-  gap: 20px h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
+  padding:30px;
+  
+  h1{
+    font-size: 24px;
+    margin-bottom: 20px;
     color: #333;
+    
 
   }
 
   .main-text {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
 
-    margin-bottom: 15px;
-    background-color: #ffffff;
-    line-height: 1.6;
-    font-size: 16px;
-    padding: 15px;
-    border: Solid 1px #000000
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 }
+
 
 .small-container {
 
   max-width: 1360px;
   display: flex;
   justify-content: space-between;
-  padding: 15px; 
-  
+  gap: 20px;
 
 
-
-  .FirstBus {
+  .transport-card {
     flex: 1;
-    border: 1px solid #312f2f;
+    min-height: 150px;
+    background-color: #ffffff;
+    padding: 20px;
     text-align: center;
-    min-height: 250px;
-    min-width: 425px
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid black;
+}
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-  .ScotRail {
-    flex: 1;
-    border: 1px solid #312f2f;
-    text-align: center;
-    min-height: 250px;
-    min-width: 425px
-    
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 100px;
+}
 
-  }
-  .Subway {
-    flex: 1;
-    border: 1px solid #312f2f;
-    text-align: center;
-    min-height: 250px;
-    min-width: 425px;
-  }
+.scotrail-logo-container {
+  background-color: #0a2570;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.transport-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.transport-card p {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .p-30 {
   padding: calc($common-margin / 2) 0;
 }
 
-.aside {
-  float: left;
-  padding: $common-margin;
-  border-right: 1px solid $violet;
-  box-shadow: 4px 1px 10px -8px $violet;
-  height: 100%;
-  width: 20%;
-
-  @media screen and (max-width: 1024px) {
-    width: 15%;
-    padding: calc($common-margin / 2);
-
-    li {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width:680px) {
-    width: 20%;
-  }
-
-  // @media screen and (max-width:680px) {
-  //     width: 15%;
-  // }
-
-  ul {
-    list-style: none;
-    padding: 0;
-
-    a {
-      text-decoration: none;
-      color: unset;
-    }
-
-    li {
-      padding-left: 15px;
-      text-align: left;
-      margin: 0;
-    }
-  }
-
-  &__link {
-    display: flex;
-    align-items: center;
-    padding-bottom: 15px;
-    width: fit-content;
-    margin: 0;
-
-    @media screen and (max-width:1024px) {
-      margin: 0 auto;
-    }
-
-    &:hover {
-      p {
-        color: $violet;
-      }
-
-      svg path {
-        fill: $violet;
-      }
-
-      .parks path {
-        fill: none !important;
-        stroke: $violet;
-
-      }
-    }
-
-    svg {
-      margin: 0;
-      width: 18px !important;
-      height: 20px !important;
-    }
-  }
-}
-
-main {
-  margin: 0;
-}
-
-.main {
-  width: 80%;
-  margin: 0;
-  display: inline-block;
-  padding: $common-margin;
-
-  @media screen and (max-width: 1024px) {
-    padding: calc($common-margin / 2);
-  }
-
-  .d-flex {
-    @media screen and (min-width: 300px) {
-      flex-direction: column;
-    }
-  }
-}
-
-.purple {
-  color: $violet;
-}
-
-.container {
-  display: flex;
-  gap: $common-margin;
-  flex-wrap: wrap;
-  margin-top: $common-margin;
-
-  @media screen and (max-width:1024px) {
-    margin-top: calc($common-margin / 2);
-    gap: calc($common-margin / 2);
-  }
-}
-
-.border {
-  border: 1px solid black;
-  border-radius: 15px;
-  max-width: min-content;
-  overflow: hidden;
-
-  img {
-    border-radius: 15px 15px 0px 0px;
-    width: 300px;
-    max-height: 20rem;
-
-    @media screen and (max-width:680px) {
-      width: 250px;
-    }
-  }
-
-  div {
-    padding-left: 15px;
-    padding-top: 15px;
-
-    &:last-child {
-      padding-bottom: 15px;
-    }
-  }
-
-  .line {
-    margin-top: 15px;
-  }
-}
