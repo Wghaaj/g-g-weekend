@@ -12,36 +12,38 @@
   font-size: 20px;
 }
 
+// Main text box and text styling
 .big-container {
+  max-width: $big-container-width;
   flex: 1;
-  padding:30px;
-  
-  h1{
+  padding: 30px;
+
+
+  h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
-    
-
   }
 
   .main-text {
-    border: 1px solid black;
+
     padding: 20px;
     margin-bottom: 30px;
+  }
 
-    p:last-child {
-      margin-bottom: 0;
-    }
+  h6 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 16px;
   }
 }
 
-
+//Article box styling
 .small-container {
-
-  max-width: 1360px;
+  max-width: $small-container-width;
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 
 
   .transport-card {
@@ -56,42 +58,40 @@
     text-decoration: none;
     color: #333;
     border: 1px solid black;
+
+  }
 }
-}
+
+//article content styling
 .card-content {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
 
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-  height: 100px;
-}
 
-.scotrail-logo-container {
-  background-color: #0a2570;
-  padding: 10px;
-  border-radius: 4px;
-}
+  //article logo styling
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 100px;
+  }
 
-.transport-logo {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
+  // Blue box around the scotrail logo to make it larger
+  .scotrail-logo-container {
+    background-color: #202d61;
+    padding: 10px;
+    border-radius: 4px;
+  }
 
-.transport-card p {
-  margin: 0;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.5;
+  .transport-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
 }
 
 .p-30 {
   padding: calc($common-margin / 2) 0;
 }
-
