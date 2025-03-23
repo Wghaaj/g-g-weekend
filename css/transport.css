@@ -1,0 +1,78 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.aclonica {
+  font-family: "Aclonica", sans-serif;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.big-container {
+  max-width: 1600px;
+  flex: 1;
+  padding: 30px;
+}
+.big-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.big-container .main-text {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.big-container h6 {
+  font-family: "Aclonica", sans-serif;
+  font-size: 16px;
+}
+
+.small-container {
+  max-width: 1360px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.small-container .transport-card {
+  flex: 1;
+  min-height: 150px;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid black;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-content .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 100px;
+}
+.card-content .scotrail-logo-container {
+  background-color: #202d61;
+  padding: 10px;
+  border-radius: 4px;
+}
+.card-content .transport-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.p-30 {
+  padding: 30px 0;
+}

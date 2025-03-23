@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/transport.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
     <header>
         <div class="big-container">
@@ -29,15 +31,90 @@
                 <nav class="navigation" id="navigation">
                     <ul class=" d-flex" id="ul">
                         <li class="li"> <a href="index.html">HOME</a></li>
-                        <li class="li" id="link-active"><a href="transport.html">TRANSPORT</a></li>
-                        <li class="li"> <a href="weather.html">WEATHER</a></li>
+                        <li class="li"id="link-active"><a href="transport.html">TRANSPORT</a></li>
+                        <li class="li"><a href="weather.html">WEATHER</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main>
 
+    <main>
+        <div class="big-container ">
+            <h1 class="aclonica f-20">Looking for transport in Glasgow?</h1>
+
+            <div class="main-text">
+                <p>
+                    Glasgow offers a range of efficient transport options for getting around the city. The Glasgow
+                    Subway is a quick and convenient way to travel especially in the city centre and West End with
+                    Stations avaliable throughout Glasgow.
+
+                    Taxis, including black cabs and ride-hailing services like Uber, are widely available and are a
+                    good option for door-to-door convenience, especially late at night.
+                </p>
+                <br>
+                <p>
+                    Buses provide extensive coverage across the city and surrounding areas, with major operators
+                    like First Glasgow offering frequent services, They use a contactless payment card system or app for
+                    fares
+                    is highly recommended for convenience.
+                </p>
+                <br>
+                <p>
+                    Trains are another popular mode of transport, with ScotRail providing services across the city
+                    and beyond. Major stations include Glasgow Central and Glasgow Queen Street.
+                </p>
+                <br>
+                <h6>
+                    Travel tips:
+                </h6>
+                <br>
+                <p>
+                    For visitors, purchasing a day ticket or travel card can save money if you plan to use multiple
+                    modes of public transport. Finally, plan your journeys in advance using apps like Google Maps or
+                    Traveline Scotland for real-time updates and efficient routes.
+                </p>
+            </div>
+
+            <div class="small-container">
+                <a href="https://www.firstbus.co.uk/" class="transport-card">
+                    <div class="card-content">
+                        <div class="logo-container">
+                            <img src="images/first-bus-logo.jpg" alt="First Bus Logo" class="transport-logo">
+                        </div>
+                        <p>
+                            First Bus provides extensive bus services throughout Glasgow and surrounding areas. Their
+                            network covers all major destinations with frequent daily services.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://www.scotrail.co.uk/" class="transport-card">
+                    <div class="card-content">
+                        <div class="logo-container scotrail-logo-container">
+                            <img src="images/scotrail-logo.jpg" alt="ScotRail Logo" class="transport-logo">
+                        </div>
+                        <p>
+                            ScotRail connects Glasgow to the rest of Scotland with regular train services from Glasgow
+                            Central and Queen Street stations.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://www.spt.co.uk/subway/" class="transport-card">
+                    <div class="card-content">
+                        <div class="logo-container">
+                            <img src="images/subway-logo.jpg" alt="Glasgow Subway Logo" class="transport-logo">
+                        </div>
+                        <p>
+                            The Glasgow Subway is a convenient circular underground system serving the city center and
+                            West End with 15 stations.
+                        </p>
+                        </div>
+                        
+                </a>
+
+            </div>
     </main>
     <footer>
         <div class="big-container">
@@ -46,15 +123,18 @@
                     <p>© Great Glasgow Weekend </p>
                 </div>
                 <div class="logo">
-                    <a href="index.html" class="logo"><svg width="" height="70px" viewBox="0 0 179 123" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect width="179" height="123" fill="url(#pattern0_129_2)"/>
-                        <defs>
-                        <pattern  patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_129_2" transform="matrix(0.00429469 0 0 0.00625 -0.051868 0)"/>
-                        </pattern>
-                        <image  width="257" height="160" xlink:href="data:image/png;base64,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"/>
-                        </defs>
-                    </svg> </a>  
+                    <a href="index.html" class="logo"><svg width="" height="70px" viewBox="0 0 179 123" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="179" height="123" fill="url(#pattern0_129_2)" />
+                            <defs>
+                                <pattern patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_129_2"
+                                        transform="matrix(0.00429469 0 0 0.00625 -0.051868 0)" />
+                                </pattern>
+                                <image width="257" height="160"
+                                    xlink:href="data:image/png;base64,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" />
+                            </defs>
+                        </svg> </a>
                 </div>
                 <div class="contact-details">
                     <p>Phone: <a href="tel:07453895423" class="contact-link">07453895423</a></p>
@@ -65,4 +145,5 @@
     </footer>
     <script src="js/header.js"></script>
 </body>
+
 </html>
