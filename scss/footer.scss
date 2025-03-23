@@ -25,6 +25,11 @@ body {
     align-items: center;
 }
 
+.logo-2 img {
+    height: 70px;
+    margin-left: 15px;
+}
+
 footer {
     padding: calc($common-margin / 2) $common-margin;
     border-top: 1px solid black;
@@ -39,19 +44,23 @@ footer {
         grid-area: b;
     }
 
-    .contact-details {
+    .logo-2 {
         grid-area: c;
+    }
+
+    .contact-details {
+        grid-area: d;
     }
 }
 
 .footer-grid {
-    grid-template-areas: "a b c";
+    grid-template-areas: "a b c d";
 
     @media screen and (max-width:1024px) {
         grid-template-areas: "a b"
-        "c c ";
+        "c d ";
 
-        .contact-details {
+        .contact-details, .logo-2{
             padding-top: calc($common-margin / 2);
         }
     }
@@ -60,13 +69,14 @@ footer {
         grid-template-areas: "a"
         "b"
         "c"
+        "d"
         ;
 
-        .copyright, .logo {
+        .copyright, .logo, .logo-2 {
             padding-bottom: calc($common-margin / 2);
         }
         
-        .contact-details {
+        .contact-details, .logo-2 {
             padding-top: 0;
         }
     }
